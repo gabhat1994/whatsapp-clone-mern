@@ -20,7 +20,7 @@ export default function SidebarChat({ id, name, addNewChat }) {
           setMessages(snapshot.docs.map((doc) => doc.data()))
         );
     }
-  }, []);
+  }, [id]);
 
   const createChat = () => {
     const roomName = prompt("Please eneter name for chat room");
